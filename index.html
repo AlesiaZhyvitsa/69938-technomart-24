@@ -5,8 +5,93 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header>
+      <nav class="header-navigation">
+        <a class="header-logo">
+          <img src="img/index-logo.svg" width="111" height="17" alt="Логотип интернет-магазина «Техномарт»">
+        </a>
+        <p>
+          <a class="top-navigation">Поиск:</a>
+          <a class="top-navigation" href="bookmarks.html">Закладки: 0</a>
+          <a class="top-navigation" href="cart.html">Корзина: 0</a>
+          <a class="top-navigation" href="order.html">Оформить заказ</a>
+        </p>
+        <ul class="login-navigation">
+          <li class="sign-in-link">Вход</li>
+          <li class="sign-up-link">Регистрация</li>
+        </ul>
+        <ul class="menu-header-navigation">
+          <li class="site-navigation-current"><a href="index.html">Главная</a></li>
+          <li><a href="company.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="promo.html">Спецпредложения</a></li>
+          <li><a href="deliver.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <h1 class="page-title">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
+      <p class="header-contacts">
+        <span class="phone">+7 (812) 555-05-55</span><br>
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      </p>
+    </header>
+    <main class="container">
+      <!-- Здесь будут блоки Предложения, Популярные товары, Популярные производители, Сервисы -->
+      <section class="company">
+        <h2>Компания «Техномарт»</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!Техномарт работает со многими транспортными компаниями:</p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="button" href="company.html">Подробнее о компании</a>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
+        <p class="map"><a href="#"><img src="img/map.jpg" width="300" height="158" alt="Карта"></a></p>
+        <a class="button" href="#">Заблудились? Напишите нам!</a>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <img src="img/index-logo.svg" width="139" height="21" alt="Логотип интернет-магазина «Техномарт»">
+      <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        +7 (812) 555-05-55</p>
+      <nav class="footer-navigation">
+        <ul class="menu-footer-navigation-white">
+          <li><a href="company.html">Компания</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="deliver.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="menu-footer-navigation-yellow">
+          <li><a href="materials.html">Материалы</a></li>
+          <li><a href="equipment.html">Техника</a></li>
+          <li><a href="tool.html">Инструмент</a></li>
+          <li><a href="promo.html">Спецпредложения</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copyright-company">
+        © 2010–2019 Компания «Техномарт»<br>
+         Все права защищены
+      </p>
+      <ul class="footer-social">
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+      </ul>
+      <p class="footer-email-adress">
+        Обратная связь:<br>
+        <a href="#">mail@htmlacademy.ru</a>
+      </p>
+      <p class="footer-copyright-htmlacademy">
+        Разработано —<br>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+      </p>
+    </footer>
   </body>
 </html>
