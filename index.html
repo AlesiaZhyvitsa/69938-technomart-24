@@ -11,14 +11,25 @@
           <img src="img/logo-technomart.svg" width="111" height="17" alt="Логотип интернет-магазина «Техномарт»">
         </a>
         <p class="top-navigation">
-          <form class="search"></form>
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <label for="search-id">Поиск:</label>
+            <input type="search" name="search" id="search-id">
+          </form>
           <a href="bookmarks.html">Закладки: 0</a>
           <a href="cart.html">Корзина: 0</a>
           <a href="order.html">Оформить заказ</a>
         </p>
         <ul class="login-navigation">
-          <li class="sign-in-link">Вход</li>
-          <li class="sign-up-link">Регистрация</li>
+          <li>
+            <a class="sign-in-link" href="sign-in.html">
+              Вход
+            </a>
+          </li>
+          <li class="sign-up-link">
+            <a class="sign-up-link" href="sign-up.html">
+              Регистрация
+            </a>
+          </li>
         </ul>
         <ul class="menu-header-navigation">
           <li class="site-navigation-current"><a href="index.html">Главная</a></li>
@@ -55,6 +66,40 @@
         <p class="map"><a href="#"><img src="img/map.jpg" width="300" height="158" alt="Карта"></a></p>
         <a class="button" href="#">Заблудились? Напишите нам!</a>
       </section>
+      <section class="modal modal-letter">
+      <h2 class="visually-hidden">
+        Напишите нам
+      </h2>
+        <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="letter-item">
+            <label for="prenom-id">Ваше имя:</label>
+            <input type="text" name="prenom" id="prenom-id" placeholder="Имя Фамилия">
+          </p>
+          <p class="letter-item">
+            <label for="e-mail-id">Ваш e-mail:</label>
+            <input type="text" name="e-mail" id="e-mail-id" placeholder="email@example.com">
+          </p>
+          <p class="letter-item">
+            <label for="text-id">Текст письма:</label><br>
+            <textarea name="text" id="text-id" placeholder="В свободной форме"></textarea>
+          </p>
+          <input class="button" type="submit" value="Отправить">
+        </form>
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
+      </section>
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">
+          Как до нас добраться
+        </h2>
+        <p>
+          <img src="img/map_big.jpg" width="940" height="447" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
+    </section>
     </main>
     <footer class="main-footer">
       <img src="img/logo-technomart.svg" width="139" height="21" alt="Логотип интернет-магазина «Техномарт»">
