@@ -8,9 +8,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header inner">
       <nav class="header-navigation">
-        <div class="header-navigation-top">
+       <div class="container-dark">
+        <div class="header-navigation-top container">
         <a class="header-logo" href="index.html">
           <img src="img/logo-technomart.svg" width="111" height="17" alt="Логотип интернет-магазина «Техномарт»">
         </a>
@@ -20,11 +21,21 @@
             <input type="search" name="search" id="search-id">
             <button type="submit" class="button">Отправить</button>
           </form>
+          <div class="wrapper-links">
           <a href="bookmarks.html">Закладки: 0</a>
           <a class="cart-active" href="cart.html">Корзина: 10</a>
           <a class="button-green" href="order.html">Оформить заказ</a>
+        </div>
         </p>
       </div>
+      </div>
+      <div class="container-light">
+       <div class="header-center container">
+      <p class="header-title">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
+      <p class="header-contacts">
+        <span class="phone">+7 (812) 555-05-55</span><br>
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      </p>
         <div class="user">
         <p class="user-field">
           <a href="user-profile.html">Равшан Джамшутович</a>
@@ -35,7 +46,8 @@
           <a href="personal-area.html">Личный кабинет</a>
         </p>
       </div>
-        <ul class="menu-header-navigation">
+      </div>
+        <ul class="menu-header-navigation container">
           <li><a href="index.html">Главная</a></li>
           <li><a href="company.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -44,12 +56,8 @@
           <li><a href="deliver.html">Доставка</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
+        </div>
       </nav>
-      <p class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <p class="header-contacts">
-        <span class="phone">+7 (812) 555-05-55</span><br>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </p>
     </header>
     <main class="container">
       <ul class="breadcrumbs">
@@ -58,6 +66,7 @@
         <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
       <h1 class="page-title-inner">Перфораторы</h1>
+      <div class="catalog-columns">
       <section class="filters">
         <h2>Фильтр:</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -271,6 +280,7 @@
           </li>
         </ul>
       </section>
+      </div>
       <section class="modal modal-cart-adding">
         <h2>
           Товар добавлен в корзину!
@@ -288,12 +298,17 @@
         <button type="button" class="modal-close">Закрыть</button>
       </section>
 
+
     </main>
     <footer class="main-footer">
-      <div class="footer-top">
+        <div class="container-light-blue">
+      <div class="footer-top container">
+        <div class="container-footer-contacts">
       <img class="footer-logo" src="img/logo-technomart.svg" width="139" height="21" alt="Логотип интернет-магазина «Техномарт»">
       <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         +7 (812) 555-05-55</p>
+    </div>
+    <div class="container-footer-navigation">
       <nav class="footer-navigation">
         <ul class="menu-footer-navigation-white">
           <li><a href="company.html">Компания</a></li>
@@ -310,7 +325,10 @@
         </ul>
       </nav>
     </div>
-    <div class="footer-down">
+    </div>
+    </div>
+    <div class="container-dark-blue">
+    <div class="footer-down container">
       <p class="footer-copyright-company">
         © 2010–2019 Компания «Техномарт»<br>
          Все права защищены
@@ -328,6 +346,7 @@
         Разработано —
         <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
+    </div>
     </div>
     </footer>
   </body>
