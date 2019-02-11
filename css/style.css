@@ -15,8 +15,295 @@ a {
   text-decoration: none;
 }
 
+/* Сетка для глаавной*/
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container-dark {
+  width: 100%;
+  margin-bottom: 46px;
+
+  background-color: #293449;
+
+  /* Временно для сетки */
+ min-height: 42px;
+}
+
+.container-light {
+  width: 100%;
+
+  background-color: #f3f7f8;
+}
+
+.header-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-navigation-top {
+  display: flex;
+  align-items: center;
+}
+
+.header-center{
+  display: flex;
+  margin-bottom: 42px;
+}
+
+.menu-header-navigation {
+  display: flex;
+  margin-bottom: 60px;
+
+  background-color: #293449;
+
+  /* Временно для сетки */
+ min-height: 60px;
+}
+
+.header-logo {
+  padding: 13px 55px 11px 55px;
+  margin-right: 50px;
+  border-bottom: 5px solid #b52933;
+}
+
+.wrapper-links {
+  margin-left: auto;
+}
+
+.page-title-index,
+.header-title {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  margin-left: 53px;
+  margin-right: 70px;
+}
+
+.header-contacts {
+  margin: 0;
+  padding: 0;
+}
+
+.login-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+.user-field,
+.user-links {
+  margin: 0;
+  padding: 0;
+}
+
+.user {
+  margin-left: auto;
+}
+
+.container-company {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-company h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.company {
+  width: 540px;
+
+  /* Временно для сетки */
+  min-height: 370px;
+}
+
+.contacts {
+  width: 300px;
+
+  /* Временно для сетки */
+  min-height: 370px;
+}
+
+.container-light-blue {
+  width: 100%;
+
+  background-color: #32425c;
+}
+
+.container-dark-blue {
+  width: 100%;
+
+  background-color: #293449;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-footer-navigation-white,
+.menu-footer-navigation-yellow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  padding: 21px 41px;
+  margin-bottom: 27px;
+  border-bottom: 5px solid #b52933;
+}
+
+p.footer-contacts {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+ul.menu-footer-navigation-white {
+  width: 550px;
+  margin: 0;
+  padding: 0;
+  padding-top: 37px;
+  padding-bottom: 40px;
+}
+
+ul.menu-footer-navigation-yellow {
+  width: 527px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+.footer-down {
+  display: flex;
+  padding-top: 39px;
+  padding-bottom: 35px;
+}
+
+p.footer-copyright-company {
+  width: 240px;
+  margin: 0;
+  padding: 0;
+  margin-right: 150px;
+}
+
+ul.footer-social {
+  width: 131px;
+  margin: 0;
+  padding: 0;
+  margin-right: 118px;
+}
+
+p.footer-email-adress {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+}
+
+p.footer-copyright-htmlacademy {
+  width: 111px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+
+
+  /* Сетка для каталога*/
+.breadcrumbs {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+h1.page-title-inner {
+
+  margin-bottom: 20px;
+
+  /* Временно для сетки */
+  min-height: 89px;
+}
+
+.filters {
+  width: 220px;
+
+  /* Временно для сетки */
+  min-height: 746px;
+}
+
+.filters h2 {
+  /* Временно для сетки */
+  min-height: 38px;
+}
+
+.catalog {
+  width: 700px;
+
+  /* Временно для сетки */
+  min-height: 996px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 52px;
+}
+
+.catalog-item {
+  width: 220px;
+  margin-bottom: 20px;
+
+  /* Временно для сетки */
+  min-height: 320px;
+}
+
+.catalog-item:nth-child(3n) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main-header {
   background-color: #f3f7f9;
+}
+
+header.main {
+  margin-bottom: 59px;
+}
+
+header.inner {
+  margin-bottom: 22px;
 }
 
 .header-navigation-top,
@@ -26,7 +313,6 @@ a {
   line-height: 18px;
   color: #ffffff;
 
-  background-color: #293449;
 }
 
 .header-navigation a,
@@ -81,6 +367,7 @@ input[type=search]:focus {
 
 a.button-green {
   background-color: #63a63e;
+  padding: 13px 20px;
 }
 
 a.button-green:hover {
@@ -271,6 +558,14 @@ h1.page-title-inner {
   border: 1px solid #e5e5e5;
 }
 
+.filter-button:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.filter-button:focus {
+  border: 1px solid #ee3643;
+}
+
 .catalog-list {
   list-style: none;
 }
@@ -435,7 +730,7 @@ h1.page-title-inner {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  background-color: #32425c;
+  margin-top: 85px;
 }
 
 .footer-logo {
