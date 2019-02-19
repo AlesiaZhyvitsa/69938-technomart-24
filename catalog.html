@@ -19,11 +19,11 @@
           <form class="search" action="https://echo.htmlacademy.ru" method="get">
             <label for="search-id">Поиск:</label>
             <input type="search" name="search" id="search-id">
-            <button type="submit" class="button">Отправить</button>
+            <button type="submit" class="button visually-hidden">Отправить</button>
           </form>
           <div class="wrapper-links">
-          <a href="bookmarks.html">Закладки: 0</a>
-          <a class="cart-active" href="cart.html">Корзина: 10</a>
+          <a class="bookmarks-link" href="bookmarks.html">Закладки: 0</a>
+          <a class="cart-link cart-active" href="cart.html">Корзина: 10</a>
           <a class="button-green" href="order.html">Оформить заказ</a>
         </div>
         </p>
@@ -33,13 +33,13 @@
        <div class="header-center container">
       <p class="header-title">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
       <p class="header-contacts">
-        <span class="phone">+7 (812) 555-05-55</span><br>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <span class="phone">+7 (812) 555-05-55</span>
+        <span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </p>
         <div class="user">
         <p class="user-field">
-          <a href="user-profile.html">Равшан Джамшутович</a>
-          <a href="deauthorization.html">Деавторизация</img></a>
+          <a class="user-profile" href="user-profile.html">Равшан Джамшутович</a>
+          <a class="deauthorization" href="deauthorization.html"><span class="visually-hidden">Деавторизация</span></a>
         </p>
         <p class="user-links">
           <a href="orders.html">Мои заказы</a>
@@ -287,7 +287,7 @@
         </h2>
         <p>
           <div class="button-area">
-          <a href="checkout.html" class="button">
+          <a href="checkout.html" class="button button-red">
             Оформить заказ
           </a>
           <a href="catalog.html" class="button button-white">
@@ -334,9 +334,9 @@
          Все права защищены
       </p>
       <ul class="footer-social">
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button-vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="social-button-f" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button-inst" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
       </ul>
       <p class="footer-email-adress">
         Обратная связь:
