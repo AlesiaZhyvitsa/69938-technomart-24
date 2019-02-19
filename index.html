@@ -19,12 +19,12 @@
           <form class="search" action="https://echo.htmlacademy.ru" method="get">
             <label for="search-id">Поиск:</label>
             <input type="search" name="search" id="search-id">
-            <button type="submit" class="button">Отправить</button>
+            <button type="submit" class="button visually-hidden">Отправить</button>
           </form>
           <div class="wrapper-links">
-          <a href="bookmarks.html">Закладки: 0</a>
-          <a href="cart.html">Корзина: 0</a>
-          <a class="button-green" href="order.html">Оформить заказ</a>
+          <a class="bookmarks-link" href="bookmarks.html">Закладки: 0</a>
+          <a class="cart-link" href="cart.html">Корзина: 0</a>
+          <a class="order-link button-green" href="order.html">Оформить заказ</a>
         </div>
         </p>
       </div>
@@ -33,8 +33,8 @@
      <div class="header-center container">
       <h1 class="page-title-index">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
       <p class="header-contacts">
-        <span class="phone">+7 (812) 555-05-55</span><br>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <span class="phone">+7 (812) 555-05-55</span>
+        <span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </p>
         <ul class="login-navigation">
           <li>
@@ -42,7 +42,7 @@
               Войти
             </a>
           </li>
-          <li class="sign-up-link">
+          <li>
             <a class="sign-up-link" href="sign-up.html">
               Регистрация
             </a>
@@ -60,20 +60,22 @@
         </ul>
        </div>
       </nav>
-
     </header>
+
     <main class="container">
       <!-- Здесь будут блоки Предложения, Популярные товары, Популярные производители, Сервисы -->
      <div class="container-company">
       <section class="company">
         <h2>Компания «Техномарт»</h2>
+        <div class="block-text">
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!Техномарт работает со многими транспортными компаниями:</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
         <ul class="transport-companies-list">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
+        </div>
         <a class="button" href="company.html">Подробнее о компании</a>
       </section>
       <section class="contacts">
@@ -88,6 +90,7 @@
         Напишите нам
       </h2>
         <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="items-container">
           <p class="letter-item">
             <label for="prenom-id">Ваше имя:</label>
             <input type="text" name="prenom" id="prenom-id" placeholder="Имя Фамилия">
@@ -100,6 +103,7 @@
             <label for="text-id">Текст письма:</label><br>
             <textarea name="text" id="text-id" placeholder="В свободной форме"></textarea>
           </p>
+        </div>
           <div class="button-area">
             <button class="button" type="submit">Отправить</button>
           </div>
@@ -154,9 +158,9 @@
          Все права защищены
       </p>
       <ul class="footer-social">
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button-vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="social-button-f" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button-inst" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
       </ul>
       <p class="footer-email-adress">
         Обратная связь:
