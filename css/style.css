@@ -213,6 +213,9 @@ p.footer-copyright-htmlacademy {
 .catalog-item:nth-child(3n) {
 }
 
+
+/*Модальные окна*/
+
 .modal-letter,
 .modal-cart-adding {
   width: 620px;
@@ -222,6 +225,8 @@ p.footer-copyright-htmlacademy {
 }
 
 .modal-map {
+  width: 940px;
+  height: 447px;
   box-shadow: 0 0px 16px rgba(47, 42, 43, 0.5);
 }
 
@@ -231,6 +236,8 @@ p.footer-copyright-htmlacademy {
   padding: 37px 80px;
   justify-content: space-between;
 }
+
+
 
 
 
@@ -893,6 +900,42 @@ ul.menu-header-navigation {
   background-color: #f4f4f4;
 }
 
+
+/*Форма*/
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 47px 80px 35px 80px;
+}
+
+.letter-item {
+  padding: 0;
+  margin: 0;
+  width: 220px;
+}
+
+.letter-item label {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.letter-item-textarea label {
+  margin-top: 21px;
+  margin-bottom: -9px;
+}
+
+.letter-item input {
+  width: 100%;
+}
+
+.letter-item textarea {
+  width: 460px;
+  resize: none;
+}
+
 .letter-item {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -901,13 +944,27 @@ ul.menu-header-navigation {
 
 .letter-item textarea,
 .letter-item input {
+  box-sizing: border-box;
+  padding: 8px 14px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  color: #a9a9a9;
+  color: #000000;
   background-color: #ffffff;
   border: 2px solid #dee3e4;
+  border-radius: 3px;
 }
+
+.letter-item textarea::-webkit-input-placeholder,
+.letter-item input::-webkit-input-placeholder {
+    color: #a9a9a9;
+   }
+
+.letter-item textarea::-moz-placeholder,
+.letter-item input::-moz-placeholder {
+    color: #a9a9a9;
+   }
 
 .letter-form .button {
   padding-left: 198px;
@@ -1407,6 +1464,10 @@ a.catalog-item-link {
   text-decoration: line-through;
 }
 
+.catalog-item-price .hidden-price {
+  visibility: hidden;
+}
+
 .new-price {
   position: relative;
   width: 80px;
@@ -1431,6 +1492,51 @@ a.catalog-item-link {
 
   border: 19px solid white;
   border-left-color: #ee3643;
+}
+
+
+/*Модальное окно*/
+
+.modal {
+  position: relative;
+}
+
+.modal-cart-adding {
+  position: relative;
+}
+
+.modal-cart-adding::before {
+  content: "";
+
+  position: absolute;
+  top: 48px;
+  left: 81px;
+  width: 66px;
+  height: 66px;
+
+  background-image: url("img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.modal-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+
+  background-image: url("img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .button-area .button-red {
