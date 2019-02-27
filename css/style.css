@@ -51,7 +51,9 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -1002,6 +1004,7 @@ h1.page-title-inner {
   padding: 10px 0px 10px 18px;
   margin-bottom: 10px;
 
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -1115,8 +1118,12 @@ button.max-price-button {
 
 .filter .price ul {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-bottom: 45px;
 }
 
@@ -1361,8 +1368,12 @@ input[type="radio"].visually-hidden {
 /*Каталог*/
 
 div.sorting-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0;
   margin: 0;
   padding: 10px 0px 10px 18px;
@@ -1378,6 +1389,8 @@ div.sorting-title {
 
 .sorting-title ul {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
   margin: 0;
@@ -1696,6 +1709,8 @@ a.catalog-item-link {
 }
 
 .pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   list-style: none;
