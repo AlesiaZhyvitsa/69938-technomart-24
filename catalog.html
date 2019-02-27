@@ -73,6 +73,23 @@
       <section class="filters">
         <h2>Фильтр:</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="price">
+          <legend>Цена:</legend>
+            <div class="price-range-buttons">
+              <button class="min-price-button" type="button"><span class="visually-hidden">Минимальная цена</span></button>
+              <button class="max-price-button" type="button"><span class="visually-hidden">Минимальная цена</span></button>
+            </div>
+            <ul>
+              <li>
+                <label for="min-price-id" class="visually-hidden">Минимальная цена</label>
+                <input type="text" name="min-price" id="min-price-id" value="0">
+              </li>
+              <li>
+                <label for="max-price-id" class="visually-hidden">Минимальная цена</label>
+                <input type="text" name="max-price" id="max-price-id" value="30000">
+              </li>
+            </ul>
+        </fieldset>
          <fieldset class="manufacturers">
           <legend>Производители:</legend>
           <ul>
@@ -118,7 +135,16 @@
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
-        <p class="sorting-title">Сортировка:</p>
+        <div class="sorting-title">
+          Сортировка:
+          <ul>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По функционалу</a></li>
+            <li><a class="up" href="#"><span class="visually-hidden">Сортировка по возрастанию</span></a></li>
+            <li><a class="down" href="#"><span class="visually-hidden">Сортировка по убыванию</span></a></li>
+          </ul>
+        </div>
         <ul class="catalog-list">
           <li class="catalog-item">
             <div class="flag flag-new">новинка</div>
@@ -293,28 +319,27 @@
             </p>
           </li>
         </ul>
+        <ul class="pagination-list">
+      <li class="pagination-item pagination-item-current"><a>1</a></li>
+      <li class="pagination-item"><a href="#">2</a></li>
+      <li class="pagination-item"><a href="#">3</a></li>
+      <li class="pagination-item"><a href="#">Следующая</a></li>
+    </ul>
       </section>
       </div>
 
-      <section class="modal modal-cart-adding">
-        <h2>
-          Товар добавлен в корзину!
-        </h2>
-        <!-- <p> -->
-          <div class="button-area">
-          <a href="checkout.html" class="button button-red">
-            Оформить заказ
-          </a>
-          <a href="catalog.html" class="button button-white">
-            Продолжить покупки
-          </a>
-        </div>
-        <!-- </p> -->
-        <button type="button" class="modal-close">Закрыть</button>
-      </section>
-
-
     </main>
+
+    <div class="section-background">
+    <section class="perforators-note">
+      <div class="perforators-note-container container">
+      <h2>Пара слов о перфораторах</h2>
+      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+     </div>
+    </section>
+  </div>
+
     <footer class="main-footer">
         <div class="container-light-blue">
       <div class="footer-top container">
@@ -364,5 +389,24 @@
     </div>
     </div>
     </footer>
+
+
+    <section class="modal modal-cart-adding">
+      <h2>
+        Товар добавлен в корзину!
+      </h2>
+      <!-- <p> -->
+        <div class="button-area">
+        <a href="checkout.html" class="button button-red">
+          Оформить заказ
+        </a>
+        <a href="catalog.html" class="button button-white">
+          Продолжить покупки
+        </a>
+      </div>
+      <!-- </p> -->
+      <button type="button" class="modal-close">Закрыть</button>
+    </section>
+
   </body>
 </html>
