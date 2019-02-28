@@ -1054,7 +1054,7 @@ h1.page-title-inner {
   margin-bottom: 9px;
 
   background-color: #f7f3ec;
-  border-radius: 3px;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .price-range-buttons::before {
@@ -1367,7 +1367,7 @@ input[type="radio"].visually-hidden {
 
 /*Каталог*/
 
-div.sorting-title {
+div.sorting-panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1387,7 +1387,7 @@ div.sorting-title {
   border-radius: 3px;
 }
 
-.sorting-title ul {
+ul.sorting-list {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1398,7 +1398,7 @@ div.sorting-title {
   list-style: none;
 }
 
-.sorting-title a {
+.sorting-item a {
   margin-left: 69px;
 
   color: #c4c1bb;
@@ -1406,25 +1406,32 @@ div.sorting-title {
   border-bottom: 1px dotted #ee3643;
 }
 
-.sorting-title a:hover {
+.sorting-item a:hover {
   color: #000000;
   border-bottom: 1px solid #ee3643;
 }
 
-.sorting-title a:focus,
-.sorting-title a:active {
+.sorting-item a:focus,
+.ssorting-item a:active {
   color: #ee3643;
   border-bottom: none;
 }
 
-.sorting-title a.up,
-.sorting-title a.down {
+.sorting-item-current a,
+.sorting-item-current a:hover,
+.sorting-item-current a:focus {
+  color: #ee3643;
+  border-bottom: none;
+}
+
+.sorting-direction a.up,
+.sorting-direction a.down {
   position: absolute;
   border-bottom: none;
   opacity: 0.2;
 }
 
-.sorting-title a.up {
+.sorting-direction a.up {
   top: 4px;
   right: -57px;
 
@@ -1436,7 +1443,7 @@ div.sorting-title {
   background-position: 0 0;
 }
 
-.sorting-title a.down {
+.sorting-direction a.down {
   top: 5px;
   right: -89px;
 
@@ -1448,14 +1455,14 @@ div.sorting-title {
   background-position: 0 0;
 }
 
-.sorting-title a.up:hover,
-.sorting-title a.down:hover,
-.sorting-title a.up:focus,
-.sorting-title a.down:focus {
+.sorting-direction a.up:hover,
+.sorting-direction a.down:hover,
+.sorting-direction a.up:focus,
+.sorting-direction a.down:focus {
   opacity: 1;
 }
 
-.sorting-title a.up:focus {
+.sorting-direction a.up:focus {
   top: 4px;
   right: -57px;
 
@@ -1467,7 +1474,7 @@ div.sorting-title {
   background-position: 0 0;
 }
 
-.sorting-title a.down:focus {
+.sorting-direction a.down:focus {
   top: 5px;
   right: -89px;
 
@@ -1475,6 +1482,22 @@ div.sorting-title {
   height: 10px;
 
   background-image: url("img/icon-down-dir-focus.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.sorting-direction-current a.up,
+.sorting-direction-current a.up:hover,
+.sorting-direction-current a.up:focus {
+  top: 4px;
+  right: -57px;
+
+  width: 11px;
+  height: 10px;
+
+  opacity: 1;
+
+  background-image: url("img/icon-up-dir-focus.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
