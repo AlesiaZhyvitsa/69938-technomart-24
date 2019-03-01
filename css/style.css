@@ -441,11 +441,11 @@ a.cart-active-red {
   background-color: #ee3643;
 }
 
-a.cart-active:hover {
+a.cart-active-red:hover {
   background-color: #ca2c37;
 }
 
-a.cart-active:focus {
+a.cart-active-red:focus {
   color: #b6c8ae;
   background-color: #ba2732;
 }
@@ -785,8 +785,13 @@ ul.menu-header-navigation {
 
 .special-offers-item {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 
   width: 300px;
   margin-bottom: 20px;
@@ -921,8 +926,12 @@ a.special-offers-button:focus {
 }
 
 .flex-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .float-items {
@@ -975,7 +984,9 @@ a.special-offers-button:focus {
 
   text-align: center;
   font-size: 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .slider-controls i {
@@ -1090,8 +1101,12 @@ ul.slider-list {
 }
 
 .popular-title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
 
   background-color: #f9f5f0;
@@ -1110,8 +1125,12 @@ ul.slider-list {
 }
 
 ul.popular-goods-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1137,8 +1156,11 @@ ul.popular-goods-list {
 }
 
 .manufacturers-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1157,10 +1179,14 @@ ul.popular-goods-list {
   line-height: 0px;
 
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 218px;
   min-height: 143px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   background-color: #ffffff;
   border: 1px solid #eaeaea;
@@ -1168,12 +1194,14 @@ ul.popular-goods-list {
 
 .manufacturers-item a:hover {
   border: 1px solid #ffffff;
-  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+  -webkit-box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+          box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .manufacturers-item a:focus {
   border: 1px solid #ffffff;
-  box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+  -webkit-box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+          box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
 
 .manufacturers-item a:focus::before {
@@ -1195,8 +1223,224 @@ ul.popular-goods-list {
   padding-left: 46px;
 }
 
+.logo-makita {
+  padding-left: 47px;
+}
 
+.logo-dewalt {
+  padding-left: 36px;
+}
 
+.logo-interskol {
+  padding-left: 8px;
+}
+
+.logo-hitachi {
+  padding-left: 27px;
+}
+
+.logo-lg {
+  padding-left: 47px;
+}
+
+.logo-aeg {
+  padding-left: 34px;
+}
+
+.logo-metabo {
+  padding-left: 9px;
+}
+
+/*Сервисы*/
+
+.services-wrap {
+  width: 100%;
+
+  background-color: #f4f8f9;
+}
+
+.slider-services {
+  margin-bottom: 79px;
+}
+
+.slider-services h2 {
+  padding-top: 65px;
+}
+
+.slider-services p {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 26px;
+}
+
+p.services-paragraph {
+  width: 400px;
+  margin-bottom: 69px;
+}
+
+.slider-services-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider-services ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.slider-services-controls {
+  position: relative;
+  margin-bottom: 98px;
+}
+
+ul.slider-services-controls::before {
+  content: "";
+
+  position: absolute;
+  top: -43px;
+  left: 230px;
+  width: 10px;
+  height: 272px;
+
+  background-image: url("img/border-shadow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slider-services-button {
+  width: 240px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 22px;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: left;
+
+  color: #ffffff;
+  background-color: #32425c;
+
+  cursor: pointer;
+  border: none;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #2b364a;
+}
+
+.slider-services-button:hover {
+  background-color: #293449;
+}
+
+.slider-services-button:focus,
+.slider-services-button:active {
+  color: #32425c;
+  background-color: #ffffff;
+
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.slider-services-controls .current,
+.slider-services-controls .current:hover,
+.slider-services-controls .current:focus {
+  color: #32425c;
+  background-color: #ffffff;
+
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+ul.slider-services-list {
+  margin-left: 80px;
+}
+
+.slider-services-list h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: #32425c;
+}
+
+p.services-delivery {
+  width: 280px;
+}
+
+p.services-guarantee {
+  width: 390px;
+}
+
+p.services-credit {
+  width: 300px;
+}
+
+.services-credit-button {
+  display: block;
+  width: 195px;
+}
+
+.slider-services-item {
+  position: relative;
+}
+
+.delivery-service::before {
+  content: "";
+
+  position: absolute;
+  top: 23px;
+  left: 150px;
+  width: 468px;
+  height: 261px;
+
+  background-image: url("img/services-delivery.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.guarantee-service::before {
+  content: "";
+
+  position: absolute;
+  top: 1px;
+  left: 240px;
+  width: 389px;
+  height: 283px;
+
+  background-image: url("img/services-guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.credit-service::before {
+  content: "";
+
+  position: absolute;
+  top: -1px;
+  left: 166px;
+  width: 465px;
+  height: 285px;
+
+  background-image: url("img/services-credit.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slider-services-item {
+  display: none;
+}
+
+.slider-services-item:nth-child(1) {
+  display: block;
+}
 
 
 /*Компания Контакты*/
@@ -1213,10 +1457,21 @@ ul.popular-goods-list {
   min-height: 370px;
 }
 
+h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 26px;
+}
+
 .container-company p {
   padding: 0;
   margin: 0;
-  margin-bottom: 24px;
 }
 
 .company {
@@ -1230,49 +1485,13 @@ ul.popular-goods-list {
   width: 540px;
 }
 
-.contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 300px;
+.company p:nth-child(1) {
+  margin-bottom: 24px;
 }
 
-.company a {
-  margin-top: auto;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
-.contacts a {
-  margin-top: auto;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
-}
-
-h2 {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
-
-  margin: 0;
-  padding: 0;
-  margin-bottom: 26px;
-}
-
-.company p:nth-child(3) {
+.company p:nth-child(2) {
   width: 400px;
-  margin-bottom: 26px;
-}
-
-.contacts p {
-  margin-bottom: 28px;
+  margin-bottom: 21px;
 }
 
 .transport-companies-list {
@@ -1284,7 +1503,11 @@ h2 {
 
 .transport-companies-list li {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.transport-companies-list li:nth-last-child(1) {
+  margin-bottom: 36px;
 }
 
 .transport-companies-list li::before {
@@ -1298,6 +1521,35 @@ h2 {
   height: 2px;
 
   background-color: #ee3643;
+}
+
+.company a {
+  margin-top: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+}
+
+.contacts a {
+  margin-top: auto;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+p.contacts-paragraphe {
+  width: 200px;
+  margin-bottom: 31px;
 }
 
 .button {
