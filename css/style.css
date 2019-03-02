@@ -1178,15 +1178,9 @@ ul.popular-goods-list {
 .manufacturers-item a {
   line-height: 0px;
 
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   width: 218px;
   min-height: 143px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 
   background-color: #ffffff;
   border: 1px solid #eaeaea;
@@ -1220,34 +1214,42 @@ ul.popular-goods-list {
 }
 
 .logo-bosch {
+  padding-top: 52px;
   padding-left: 46px;
 }
 
 .logo-makita {
+  padding-top: 49px;
   padding-left: 47px;
 }
 
 .logo-dewalt {
+  padding-top: 47px;
   padding-left: 36px;
 }
 
 .logo-interskol {
+  padding-top: 20px;
   padding-left: 8px;
 }
 
 .logo-hitachi {
+  padding-top: 57px;
   padding-left: 27px;
 }
 
 .logo-lg {
+  padding-top: 34px;
   padding-left: 47px;
 }
 
 .logo-aeg {
+  padding-top: 22px;
   padding-left: 34px;
 }
 
 .logo-metabo {
+  padding-top: 33px;
   padding-left: 9px;
 }
 
@@ -1802,7 +1804,6 @@ button.max-price-button {
 }
 
 .filter .price ul {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1812,17 +1813,17 @@ button.max-price-button {
   padding-bottom: 45px;
 }
 
-.filter .price ul::before {
-  content: "";
+.price-wrap {
+  position: relative;
+}
 
+.dash {
   position: absolute;
   left: 105px;
-  top: 19px;
+  top: 7px;
 
   width: 10px;
   height: 1px;
-
-  background-color: #444444;
 }
 
 .filter .price input {
