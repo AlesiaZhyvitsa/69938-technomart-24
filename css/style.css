@@ -296,9 +296,6 @@ form.search {
   position: relative;
   width: 270px;
 
-  /*Временно*/
-  height: 42px;
-
   margin-left: 215px;
 }
 
@@ -309,6 +306,10 @@ form.search {
   width: 17px;
   height: 17px;
   opacity: 0.3;
+}
+
+.search svg:hover {
+  opacity: 1;
 }
 
 input[type=search]:hover + svg {
