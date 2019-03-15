@@ -160,14 +160,14 @@ input[type="radio"].visually-hidden {
 
 .footer-logo {
   padding: 21px 41px;
-  margin-bottom: 27px;
+  margin-bottom: 21px;
   border-bottom: 5px solid #b52933;
 }
 
 p.footer-contacts {
   margin: 0;
   padding: 0;
-  padding-bottom: 50px;
+  padding-bottom: 49px;
 }
 
 .footer-navigation {
@@ -184,8 +184,8 @@ ul.menu-footer-navigation-white {
   width: 550px;
   margin: 0;
   padding: 0;
-  padding-top: 37px;
-  padding-bottom: 40px;
+  padding-top: 38px;
+  padding-bottom: 34px;
 }
 
 ul.menu-footer-navigation-yellow {
@@ -199,8 +199,8 @@ ul.menu-footer-navigation-yellow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 39px;
-  padding-bottom: 35px;
+  padding-top: 37px;
+  padding-bottom: 34px;
 }
 
 p.footer-copyright-company {
@@ -282,12 +282,18 @@ a.header-logo {
   border-bottom: 5px solid #b52933;
 }
 
-a.header-logo:hover {
+a.header-logo-main:hover,
+a.header-logo-main:focus {
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
+}
+
+a.header-logo-inner:hover {
   background-color: #ca2c37;
   border-bottom: 5px solid #9a212a;
 }
 
-a.header-logo:focus {
+a.header-logo-inner:focus {
   background-color: #ba2732;
   border-bottom: 5px solid #8e1e26;
 }
@@ -1379,7 +1385,7 @@ p.services-delivery {
 }
 
 p.services-guarantee {
-  width: 390px;
+  width: 379px;
 }
 
 p.services-credit {
@@ -2500,6 +2506,10 @@ a.catalog-item-link {
 
 .footer-logo {
   background-color: #ee3643;
+}
+
+.footer-contacts {
+  width: 330px;
 }
 
 .footer-down {
